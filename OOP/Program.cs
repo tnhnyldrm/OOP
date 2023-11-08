@@ -1,5 +1,4 @@
-﻿
-using OOP;
+﻿using OOP;
 
 Urun urun1 = new Urun();
 urun1.Adi = "elma";
@@ -24,7 +23,11 @@ foreach (Urun urun in urunler)
 Console.WriteLine("-------------Metotlar-------------");
 
 //instance - örnek
+//encapsulation
+
 SepetManager sepetManager = new SepetManager();
 sepetManager.Ekle(urun1);
 sepetManager.Ekle(urun2);
 
+sepetManager.Ekle2("armut","yesil",12,9);
+sepetManager.Ekle2("elma", "yesil elma", 12, 8);
